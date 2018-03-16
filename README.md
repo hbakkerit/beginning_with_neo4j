@@ -3,10 +3,10 @@
 Neo4j is a graph database, emphasizing on the connections between data. https://neo4j.com
 In this repository I collect stuff that comes in handy when using Neo4j. 
 
-## Cypher
+## cypher
 Cypher is the declarative graph query language used to query Neo3j databases.
 I've collected some usefull queries (or clauses, says neo4j) in the [neo4j_clauses.md file](./neo4j_clauses.md)
 
-## Running in Docker
-In order to run Neo4j in a docker swarm, use the stack files provided in [the docker directory](./docker/)
+## running in docker
+In order to run Neo4j in a Docker swarm, use the stack files provided in [the Docker directory](./docker/)
 
