@@ -64,7 +64,7 @@ Set values to properties and add labels on nodes using SET and use REMOVE to rem
 #### add or change property of a node
 ```
 MATCH (n:Switch {name:"switch-001"})
-SET n.layer = 'L2'
+SET n.L2 = 'true'
 RETURN n
 ```
 
@@ -73,6 +73,13 @@ RETURN n
 MATCH (n:Switch {name:"switch-001"})
 SET n.layer = ['L1', 'L2']
 RETURN n
+```
+
+#### remove property from node
+```
+MATCH (n:Switch { name: 'switch-001' })
+REMOVE n.L1
+RETURN n.name, n.L1
 ```
 
 ## 1.3. MERGE
@@ -145,7 +152,11 @@ What to return.
 
 # 2. constraints
 
-
+### examples
+#### list all constraints in database
+```
+CALL db.constraints
+```
 
 # 3. sources
 Cypher Manual: https://neo4j.com/docs/developer-manual/3.3/cypher/
