@@ -5,4 +5,4 @@ In this repository I collect stuff that comes in handy when using Neo4j.
 
 ## Cypher
 Cypher is the declarative graph query language used to query Neo3j databases.
-I've collected some usefull queries (or clauses, says neo4j) in the neo4j_clauses.md file. 
+I've collected some usefull queries (or clauses, says neo4j) in the [neo4j_clauses.md file](./neo4j_clauses.md)
