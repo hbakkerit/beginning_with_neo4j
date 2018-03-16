@@ -60,6 +60,21 @@ DETACH DELETE s
 ## 1.2. SET (and REMOVE)
 Set values to properties and add labels on nodes using SET and use REMOVE to remove them.
 
+### examples
+#### add or change property of a node
+```
+MATCH (n:Switch {name:"switch-001"})
+SET n.layer = 'L2'
+RETURN n
+```
+
+#### add properties to node as list
+```
+MATCH (n:Switch {name:"switch-001"})
+SET n.layer = ['L1', 'L2']
+RETURN n
+```
+
 ## 1.3. MERGE
 Match existing or create new nodes and patterns. This is especially useful together with unique constraints.
 
@@ -128,6 +143,10 @@ What to return.
 //This is a line comment
 ```
 
-# 2. sources
+# 2. constraints
+
+
+
+# 3. sources
 Cypher Manual: https://neo4j.com/docs/developer-manual/3.3/cypher/
 
