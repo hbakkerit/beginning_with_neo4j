@@ -7,6 +7,6 @@ In this repository I collect stuff that comes in handy when using Neo4j.
 Cypher is the declarative graph query language used to query Neo3j databases.
 I've collected some useful queries (or clauses, says neo4j) in the [cypher.md file](./cypher.md)
 
-## running in docker
+## running_in_docker
 In order to run Neo4j in a Docker swarm, use the stack files provided in [the Docker directory](./docker/)
 
